@@ -18,7 +18,7 @@ export default function Footer({ dict, lang }: { dict: any; lang: string }) {
               Real Estate Facilitators & Market Experts
             </p>
           </div>
-          <div className="flex space-x-6 rtl:space-x-reverse text-sm text-gray-400">
+          <div className="flex gap-4 text-sm text-gray-400">
             <Link
               href={`/${lang}`}
               className="hover:text-[#baa360] transition-colors"

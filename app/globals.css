@@ -48,6 +48,19 @@ body {
   font-family: var(--font-sans);
 }
 
+[lang="ar"] body {
+  font-family: var(--font-arabic) !important;
+}
+
+[lang="ar"] * {
+  font-family: var(--font-arabic) !important;
+}
+
+[lang="ar"] {
+  --font-serif: var(--font-arabic) !important;
+  --font-sans: var(--font-arabic) !important;
+}
+
 h1,
 h2,
 h3,
@@ -55,6 +68,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
+}
+
+[lang="ar"] h1,
+[lang="ar"] h2,
+[lang="ar"] h3,
+[lang="ar"] h4,
+[lang="ar"] h5,
+[lang="ar"] h6 {
+  font-family: var(--font-arabic);
 }
 
 /* Custom Utilities for Animations if not picked up by theme automatically */

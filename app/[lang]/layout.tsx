@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Cairo } from "next/font/google";
 import "../globals.css";
 import { dictionaries } from "../i18n/dictionaries";
 
@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
+});
+const cairo = Cairo({
+  subsets: ["arabic"],
+  variable: "--font-arabic",
 });
 
 export async function generateMetadata({
@@ -36,12 +40,12 @@ export default async function RootLayout({
   const isRtl = lang === "ar";
 
   return (
-    <html lang={lang} dir={isRtl ? "rtl" : "ltr"}>
-      <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-white text-[#181c21]`}
-      >
-        {children}
-      </body>
+    <html
+      lang={lang}
+      dir={isRtl ? "rtl" : "ltr"}
+      className={`${cairo.variable} ${inter.variable} ${playfair.variable}`}
+    >
+      <body className="antialiased bg-white text-[#181c21]">{children}</body>
     </html>
   );
 }

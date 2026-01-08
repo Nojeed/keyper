@@ -78,28 +78,28 @@ export default function Contact({ dict }: { dict: any }) {
             <div className="absolute top-0 right-0 w-20 h-20 border-t border-r border-[#baa360]/30"></div>
 
             <h3 className="text-3xl font-serif mb-10 text-white">
-              Send us a message
+              {dict.contact.sendMessageTitle}
             </h3>
             <form className="space-y-6">
               <div className="relative group">
                 <input
                   type="text"
-                  placeholder="Full Name"
-                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light placeholder:text-gray-600"
+                  placeholder={dict.contact.namePlaceholder}
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light placeholder:text-white/40"
                 />
               </div>
               <div className="relative group">
                 <input
                   type="email"
-                  placeholder="Email Address"
-                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light placeholder:text-gray-600"
+                  placeholder={dict.contact.emailPlaceholder}
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light placeholder:text-white/40"
                 />
               </div>
               <div className="relative group">
                 <textarea
                   rows={4}
-                  placeholder="Your Message"
-                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light resize-none placeholder:text-gray-600"
+                  placeholder={dict.contact.messagePlaceholder}
+                  className="w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-[#baa360] transition-all duration-500 font-light resize-none placeholder:text-white/40"
                 ></textarea>
               </div>
               <div className="pt-6">
@@ -107,7 +107,7 @@ export default function Contact({ dict }: { dict: any }) {
                   type="button"
                   className="w-full bg-[#baa360] text-white font-serif tracking-[4px] py-5 rounded-sm hover:bg-white hover:text-[#181c21] transition-all duration-500 shadow-xl hover:shadow-[#baa360]/20"
                 >
-                  SEND MESSAGE
+                  {dict.contact.sendButton}
                 </button>
               </div>
             </form>

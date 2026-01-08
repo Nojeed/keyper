@@ -5,9 +5,46 @@ export default function About({ dict }: { dict: any }) {
   return (
     <section
       id="about"
-      className="py-24 bg-white text-[#181c21] overflow-hidden"
+      className="py-24 bg-white text-[#181c21] overflow-hidden relative"
     >
-      <div className="container mx-auto px-6">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#baa360]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#baa360]/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+      <svg
+        className="absolute top-20 left-10 w-64 h-64 text-[#baa360]/20 pointer-events-none opacity-40 md:opacity-100"
+        viewBox="0 0 200 200"
+        fill="none"
+      >
+        <path
+          d="M40 60C60 20 140 20 160 60C180 100 20 100 40 140C60 180 140 180 160 140"
+          stroke="currentColor"
+          strokeWidth="0.5"
+          strokeDasharray="4 4"
+        />
+      </svg>
+
+      <svg
+        className="absolute bottom-40 right-10 w-96 h-96 text-[#baa360]/15 pointer-events-none hidden md:block"
+        viewBox="0 0 400 400"
+        fill="none"
+      >
+        <path
+          d="M50 200 Q100 50 250 200 T400 200"
+          stroke="currentColor"
+          strokeWidth="1"
+        />
+        <circle
+          cx="250"
+          cy="200"
+          r="100"
+          stroke="currentColor"
+          strokeWidth="0.5"
+          strokeDasharray="2 6"
+        />
+      </svg>
+
+      <div className="container mx-auto px-6 relative z-10">
         <ScrollAnimation className="max-w-4xl mx-auto text-center space-y-8 mb-24">
           <h2 className="text-4xl md:text-6xl font-serif text-[#baa360]">
             {dict.about.title}
