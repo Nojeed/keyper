@@ -36,6 +36,10 @@ export const dictionaries = {
       title: "Our Vision",
       text: "To redefine real estate facilitation by becoming the most trusted, transparent, and client-centric partner, setting new standards of professionalism and market expertise across the region.",
     },
+    mission: {
+      title: "Our Mission",
+      text: "To empower our clients with transparent, data-driven real estate solutions that simplify decision-making, maximize value, and build lasting trust. We strive to redefine the property experience through unwavering dedication and expert guidance.",
+    },
     contact: {
       title: "Contact Us",
       office: "Head Office",
@@ -83,6 +87,10 @@ export const dictionaries = {
     vision: {
       title: "رؤيتنا",
       text: "أن نعيد تعريف مفهوم التيسير العقاري من خلال أن نكون الشريك الأكثر ثقة وشفافية، وأن نضع معايير جديدة للاحترافية والخبرة السوقية التي تركز أولاً وأخيراً على مصلحة العميل.",
+    },
+    mission: {
+      title: "رسالتنا",
+      text: "تمكين عملائنا من خلال حلول عقارية شفافة وقائمة على البيانات، تُبسط عملية اتخاذ القرار وتزيد القيمة وتبني ثقة مستدامة. نحن نسعى لإعادة تعريف التجربة العقارية من خلال التفاني المستمر والتوجيه الخبير.",
     },
     contact: {
       title: "اتصل بنا",
@@ -132,6 +140,10 @@ export const dictionaries = {
       title: "Notre Vision",
       text: "Redéfinir la facilitation immobilière en devenant le partenaire le plus fiable et le plus transparent, reconnu pour son expertise et son approche centrée sur le client.",
     },
+    mission: {
+      title: "Notre Mission",
+      text: "Donner à nos clients les moyens d'agir grâce à des solutions immobilières transparentes et basées sur des données qui simplifient la prise de décision, maximisent la valeur et instaurent une confiance durable. Nous nous efforçons de redéfinir l'expérience immobilière grâce à un dévouement inébranlable et des conseils d'experts.",
+    },
     contact: {
       title: "Contactez-nous",
       office: "Siège Social",
@@ -179,6 +191,10 @@ export const dictionaries = {
     vision: {
       title: "Nuestra Visión",
       text: "Redefinir la facilitación inmobiliaria convirtiéndonos en el socio más confiable y transparente, estableciendo nuevos estándares de excelencia en la región.",
+    },
+    mission: {
+      title: "Nuestra Misión",
+      text: "Empoderar a nuestros clientes con soluciones inmobiliarias transparentes y basadas en datos que simplifiquen la toma de decisiones, maximicen el valor y construyan una confianza duradera. Nos esforzamos por redefinir la experiencia inmobiliaria a través de una dedicación inquebrantable y orientación experta.",
     },
     contact: {
       title: "Contáctenos",
@@ -228,6 +244,10 @@ export const dictionaries = {
     vision: {
       title: "Unsere Vision",
       text: "Die Immobilienvermittlung neu zu definieren, indem wir der vertrauenswürdigste und transparenteste Partner werden und höchste professionelle Standards setzen.",
+    },
+    mission: {
+      title: "Unsere Mission",
+      text: "Unsere Kunden mit transparenten, datengesteuerten Immobilienlösungen zu befähigen, die die Entscheidungsfindung vereinfachen, den Wert maximieren und dauerhaftes Vertrauen aufbauen. Wir streben danach, das Immobilienerlebnis durch unerschütterliches Engagement und fachkundige Anleitung neu zu definieren.",
     },
     contact: {
       title: "Kontaktieren Sie uns",

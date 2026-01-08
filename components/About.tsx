@@ -26,21 +26,18 @@ export default function About({ dict }: { dict: any }) {
               className="w-full md:w-1/2 space-y-6"
             >
               <h3 className="text-4xl font-serif text-[#181c21]">
-                {dict.nav.mission}
+                {dict.mission.title}
               </h3>
               <div className="w-16 h-1 bg-[#baa360]"></div>
               <p className="text-lg text-gray-600 leading-loose">
-                To empower our clients with transparent, data-driven real estate
-                solutions that simplify decision-making, maximize value, and
-                build lasting trust. We strive to redefine the property
-                experience through unwavering dedication and expert guidance.
+                {dict.mission.text}
               </p>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-left" className="w-full md:w-1/2">
               <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/mission-placeholder.jpg"
-                  alt={dict.nav.mission}
+                  alt={dict.mission.title}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                 />
